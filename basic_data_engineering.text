@@ -1,0 +1,38 @@
+What is data engineering?
+
+The dev that build the system that collect, clean and move the data so the others can use it with reliable and 
+    efficiently
+
+its a middleman:
+    mean: connect and manage the data from raw data to ready to use and high quality data so another role can 
+    use and analyse it
+
+Data engineer Life cycle:
+What does DE do with the data?
+a.Source: Where the data get from?(e.g.customer database, IOT sensors, website log)
+b.ingestion: How to get the data from big source
+c.storage: how to put the data? in data lake(for a raw data) and warehouse(clean data)
+d.Transformation(data Wrangling): cleaning and cooking phase(using a SQL and python):
+        1. fix error
+        2. Change format (DD/MM/YYYY to YYYY/MM/DD)
+        3. Combine data from different sources.
+e.serving: delivering the data to end users
+
+
+data pipeline:
+    an automatic sequence step to move the data from one place to another 
+2 type arcitechture data pipeline: 
+    ETL and ELT
+
+Transformation data pipeline ETL:
+    1.data cleaning --> correcting data
+    2.Data aggretation --> summarize data 
+    3.Data filtering --> keep data meets criteria
+    4.joining data --> combine data 
+    5.validation data --> check quality data
+    6. data maping --> convert data into spesific format 
+
+ETL --> EXTRACT (get the data from sources) TRANSFORM(transform data into ready to use) 
+    LOAD(store it to warehous)
+
+    
