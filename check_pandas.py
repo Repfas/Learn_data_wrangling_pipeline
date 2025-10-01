@@ -28,3 +28,28 @@ data = {
 df = pd.DataFrame(data)
 
 print(df)
+print("-------------------------"*5)
+# if wanna add the index: index mean the first row in the table 
+df_with_index = pd.DataFrame(data,index=index_data)
+
+print(df_with_index)
+
+# import csv data 
+data = pd.read_csv('Week 2/video learning/example-data-1.csv')
+
+print(data)
+# if want to make an "kode barang" as indext 
+
+data = pd.read_csv('Week 2/video learning/example-data-1.csv',index_col= "kode_barang")
+print(data)
+
+# rename the titles
+# the header parameter is using for row as a title ex: header = 1 so the scnd row gonna be a title
+# the names is to create a tittle names 
+name_title = ['product_name',"category","price","quantity"]
+data = pd.read_csv('Week 2/video learning/example-data-2.csv', header = None, names= name_title)
+
+print(data)
+a= data.head
+print(a)
+# how to change the 
