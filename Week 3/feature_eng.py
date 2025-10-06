@@ -35,5 +35,18 @@ print(superstore_encoded)
 
 
 # Binning --> classify the numeric into interval
+# using pd.cut(df["cat"],bins= ,labels=)
+cardiovasdiseasedf = pd.read_csv("video learning/Cardiovascular_Disease.csv")
 
-cardiovasdisease = pd.read_csv("")
+cardiovasdiseaseselect = cardiovasdiseasedf.iloc[:,:6]
+
+print(cardiovasdiseaseselect)
+
+custom_bins = [0,5,11,25,45,100]
+custom_label = ["toddlers","children","teenage","adults","Eldery"]
+
+cardiovasdiseaseselect["age_cat"] = pd.cut(cardiovasdiseaseselect["age"],
+                                              bins= custom_bins,\
+                                              labels= custom_label)
+
+print(cardiovasdiseaseselect)
