@@ -1,7 +1,7 @@
 import pandas as pd
 from sqlalchemy import create_engine 
 
-engine = create_engine("postgresql://postgres:Popololo037468%40@localhost:5432/pandas_trying")
+engine = create_engine("postgresql://postgres:P@localhost:5432/pandas_trying")
 connection = engine.connect()
 query = "SELECT * FROM film"
 data_pagila_sql = pd.read_sql(sql = query,con= engine)
